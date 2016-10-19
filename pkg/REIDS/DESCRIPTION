@@ -1,0 +1,15 @@
+Package: REIDS
+Type: Package
+Title: Random Effects for the Identification of Differential Splicing
+Version: 0.0.1
+Date: 2016-10-18
+Author: Marijke Van Moerbeke and Geert-Jan Bex
+Maintainer: Marijke Van Moerbeke <marijkevanmoerbeke@uhasselt.be>
+Description: Random Effects for the Identification of Differential Splicing.
+License: GPL-3
+Depends:
+    aroma.affymetrix,
+    aroma.core
+Imports:
+    data.table,RColorBrewer,MCMCpack
+RoxygenNote: 5.0.1

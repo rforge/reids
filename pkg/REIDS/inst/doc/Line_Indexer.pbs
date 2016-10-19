@@ -1,0 +1,12 @@
+#!/bin/bash -l
+#PBS -l walltime=02:00:00,nodes=1:ppn=20
+#PBS -m abe
+#PBS -M (email adress)
+#PBS -A (project name)
+
+module load Python/2.7.6-foss-2014a
+cd (directory)
+
+export OMP_NUM_THREADS=1
+
+python Line_Indexer.py --output_file TissueData_lineindex.csv TissueData_Pivot.csv

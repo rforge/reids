@@ -1,0 +1,15 @@
+#!/bin/bash -l
+#PBS -l walltime=01:00:00,nodes=1:ppn=20
+#PBS -m abe
+#PBS -M (email adress)
+#PBS -A (project name)
+
+module load R/3.1.1-intel-2014a-default
+cd (path to directory)
+
+export OMP_NUM_THREADS=1
+
+Rscript FIRMAScores.R
+
+
+
